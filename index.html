@@ -2,61 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página principal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+            color: #222;
+        }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        ul.menu li{
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 15px;
+            background-color: #0078d7;
+        }
+        ul.menu li a {
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        ul.menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.menu li:hover {
+            background-color: #005a9e;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #0078d7;
+        }
+        h2 {
+            color: black;
+            display: inline-block;
+        }
+        p{
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        #voltar {
+            background-color: #0078d7;
+            padding: 5px 5px;
+            margin-top: -15px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <div class="container">
+        <h1 id="inicio">Explicando cada aula do HTML</h1>
+        <hr>
+        <h2>Índice</h2>
+        <ul class="menu">
+            <li><a href="#intro">Introdução ao HTML</a></li>
+            <li><a href="#form">Trabalhando com Formulários</a></li>
+            <li><a href="#estrutura">Estrutura e Formatação</a></li>
+            <li><a href="#midia">Trabalhando com Mídias</a></li>
+            <li><a href="#tabelas">Criando Tabelas</a></li>
+            <li><a href="#semantico">Entendendo HTML Semântico</a></li>
+        </ul>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+        <br>
+        <br>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <h2 id="intro">Introdução ao HTML</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Entendi que o HTML é a linguagem de marcação usada para estruturar páginas da web. 
+           Ele funciona com elementos representados por <i>tags</i>, e cada parte do conteúdo da página 
+           (como textos, links e imagens) é organizada através dessas tags.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <br>
+        <br>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <h2 id="form">Trabalhando com Formulários</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Aprendi que os formulários permitem coletar dados dos usuários. 
+           Vimos elementos como <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, 
+           <code>&lt;select&gt;</code> e botões, que servem para criar campos de texto, 
+           caixas de seleção, listas suspensas e envio de informações.</p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <br>
+        <br>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <h2 id="estrutura">Estrutura e Formatação</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Nessa parte, entendi como organizar melhor o conteúdo de uma página, 
+           usando títulos <code>&lt;h1&gt; até &lt;h6&gt;</code>, parágrafos <code>&lt;p&gt;</code>, 
+           destaques como <strong>negrito</strong>, <i>itálico</i>, <u>sublinhado</u> e até 
+           elementos como <mark>marcação de texto</mark>.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+        <br>
+        <br>
 
+        <h2 id="midia">Trabalhando com Mídias</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Aqui aprendi a inserir imagens com <code>&lt;img&gt;</code>, 
+           adicionar áudios com <code>&lt;audio&gt;</code> e vídeos com <code>&lt;video&gt;</code>. 
+           Também vimos atributos como <code>controls</code> e <code>autoplay</code> 
+           para controlar como esses elementos são exibidos.</p>
+
+        <br>
+        <br>
+        
+        <h2 id="tabelas">Criando Tabelas</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Aprendi a montar tabelas usando <code>&lt;table&gt;</code>, 
+           organizando linhas com <code>&lt;tr&gt;</code> e colunas com <code>&lt;td&gt;</code> e <code>&lt;th&gt;</code>. 
+           As tabelas são muito úteis para apresentar dados de forma organizada.</p>
+
+        <br>
+        <br> 
+
+        <h2 id="semantico">Entendendo HTML Semântico</h2>
+        <small><a id="voltar" href="#inicio">Voltar</a></small>
+        <p>Nessa parte vi a importância de usar tags semânticas, como <code>&lt;header&gt;</code>, 
+           <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;section&gt;</code>. 
+           Isso ajuda os navegadores e buscadores a entenderem melhor o conteúdo da página, 
+           além de melhorar a acessibilidade.</p>
+
+        <br>
+        <br>
+        
+        <h2>Links de referências</h2>
+        <ul>
+            <li><a href="https://dio.me/track/santander-2025-front-end" target="_blank">Santander 2025 - Front-End</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">W3 Schools - HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">W3 Schools - Forms</a></li>
+            <li><a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">W3 Schools - Formatting</a></li>
+            <li><a href="https://www.w3schools.com/html/html_media.asp" target="_blank">W3 Schools - Media</a></li>
+            <li><a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">W3 Schools - Tables</a></li>
+            <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3 Schools - Semantic</a></li>
+        </ul>
+    </div>
 </body>
 </html>
